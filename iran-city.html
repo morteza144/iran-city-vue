@@ -1,0 +1,41 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="./css/bootstrap4_5_0.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="./css/myfont.css">
+    <link rel="stylesheet" href="main.css">
+		<title>vue</title>
+	</head>
+<body>
+<div id="app">
+
+
+
+<br> 
+			<select v-on:change="fff">
+				<option value="select an city" selected hidden default="true">انتخاب استان</option>
+
+				<option v-for="(item,index) in iran" v-bind:value="item">{{index}}</option>
+			</select>
+
+
+			<select>
+				<option value="select an city" selected hidden default="true">انتخاب شهر</option>
+
+				<option v-for="i in cits" v-bind:value="i">{{i}}</option>
+			</select>
+</div>
+
+
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/vue.min.js"></script>
+	<script src="js/js/bootstrap.bundle.min.js"></script>
+	<script src="iran-city-vue.js"></script>
+
+
+	</body>
+	</html>
